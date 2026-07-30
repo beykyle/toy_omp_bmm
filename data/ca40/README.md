@@ -2,7 +2,7 @@
 
 These files are the **versioned inputs** to the calibration in the parent directory. They are
 committed rather than regenerated: everything downstream of them runs anywhere, but producing
-them requires a ~2.2 GB EXFOR masterfile that cannot be redistributed here.
+them requires a ~2.2 GB EXFOR masterfile that cannot be redistributed here (see [exfor_tools](https://github.com/beykyle/exfor_tools)).
 
 ## Files
 
