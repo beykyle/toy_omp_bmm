@@ -1,0 +1,161 @@
+
+Currently Loaded Modules:
+  1) GCCcore/12.3.0                    10) OpenSSL/1.1
+  2) zlib/1.2.13-GCCcore-12.3.0        11) libevent/2.1.12-GCCcore-12.3.0
+  3) binutils/2.40-GCCcore-12.3.0      12) UCX/1.14.1-GCCcore-12.3.0
+  4) GCC/12.3.0                        13) libfabric/1.18.0-GCCcore-12.3.0
+  5) numactl/2.0.16-GCCcore-12.3.0     14) PMIx/4.2.4-GCCcore-12.3.0
+  6) XZ/5.4.2-GCCcore-12.3.0           15) UCC/1.2.0-GCCcore-12.3.0
+  7) libxml2/2.11.4-GCCcore-12.3.0     16) OpenMPI/4.1.5-GCC-12.3.0
+  8) libpciaccess/0.17-GCCcore-12.3.0  17) Miniforge3/25.11.0-1
+  9) hwloc/2.9.1-GCCcore-12.3.0
+
+ 
+
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Using database version X4-2025-12-31 located in: /mnt/home/beyerkyl/x4db/unpack_exfor-2025/X4-2025-12-31
+Running dynesty: run=dynamic, nlive=1000, ndim=10, queue_size=64, mpi_ranks=65.
+Dynesty native results: calibrations/chuq_low/dynesty_results.npz
+/mnt/ufs18/rs/reactiontheoryinitiative/model_mixing/chuq_split/.venv/lib/python3.11/site-packages/dynesty/utils.py:182: H5pyDeprecationWarning: Creating a dataset without passing data or dtype is deprecated. Pass an explicit dtype. Using dtype='f4' will keep the current default behaviour.
+  fp.create_dataset('evaluation_u',
+/mnt/ufs18/rs/reactiontheoryinitiative/model_mixing/chuq_split/.venv/lib/python3.11/site-packages/dynesty/utils.py:185: H5pyDeprecationWarning: Creating a dataset without passing data or dtype is deprecated. Pass an explicit dtype. Using dtype='f4' will keep the current default behaviour.
+  fp.create_dataset('evaluation_v',
+/mnt/ufs18/rs/reactiontheoryinitiative/model_mixing/chuq_split/.venv/lib/python3.11/site-packages/dynesty/utils.py:188: H5pyDeprecationWarning: Creating a dataset without passing data or dtype is deprecated. Pass an explicit dtype. Using dtype='f4' will keep the current default behaviour.
+  fp.create_dataset('evaluation_logl', (self.save_every, ),
+dynesty sampling took 1:38:19.018474
+Saved ArviZ InferenceData to calibrations/chuq_low/dynesty_idata.nc
+Saved dynesty-native weighted results to calibrations/chuq_low/dynesty_results.npz
+Summary
+=======
+niter: 61717
+ncall: 1790727
+eff(%):  3.419
+logz: -349.394 +/-  0.190
+None
+[1784803609.365592] [amr-213:730337:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x5573bf4a5b80 was not matched
+[1784803609.365561] [amr-213:730340:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x565137df72c0 was not matched
+[1784803609.362686] [acm-028:1253199:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x555e0f336780 was not matched
+[1784803609.364616] [acm-036:2153415:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x5583163c0880 was not matched
+[1784803609.362976] [acm-027:2950234:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x555fe1d12700 was not matched
+[1784803609.362823] [acm-028:1253196:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x558ffd1e8140 was not matched
+[1784803609.365908] [acm-042:767311:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x563e6bd0e1c0 was not matched
+[1784803609.367344] [acm-041:4030626:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x5648a2aa5600 was not matched
+[1784803609.367836] [amr-248:1340164:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x563ed6cebe80 was not matched
+[1784803609.366103] [acm-042:767310:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55a5c6b04540 was not matched
+[1784803609.366855] [acm-046:100747:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55c9032d3700 was not matched
+[1784803609.367957] [amr-248:1340166:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x5588d10a4a40 was not matched
+[1784803609.368104] [acm-038:2425523:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55f42e2d9640 was not matched
+[1784803609.368268] [acm-038:2425524:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55d2dba78540 was not matched
+[1784803609.367113] [acm-046:100748:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55aaa9afbc40 was not matched
+[1784803609.368104] [amr-248:1340165:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55e613d06980 was not matched
+[1784803609.369162] [acm-063:1592888:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55a9b22ee0c0 was not matched
+[1784803609.367169] [acm-046:100745:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55cc65a905c0 was not matched
+[1784803609.368285] [amr-248:1340163:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x561e3bd31480 was not matched
+[1784803609.370479] [acm-037:2926110:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x5583958fefc0 was not matched
+[1784803609.369382] [acm-063:1592885:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x560f68165fc0 was not matched
+[1784803609.368559] [amr-248:1340162:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55bfc1eb8700 was not matched
+[1784803609.370654] [acm-037:2926109:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x5642e5dde540 was not matched
+[1784803609.369461] [acm-063:1592886:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55f1e8df51c0 was not matched
+[1784803609.373735] [acm-025:3228589:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55f12d264300 was not matched
+[1784803609.374635] [acm-043:1320597:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x557e631fc880 was not matched
+[1784803609.370694] [acm-037:2926111:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x563537619bc0 was not matched
+[1784803609.369547] [acm-063:1592887:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55c7d89da400 was not matched
+[1784803609.373806] [acm-025:3228593:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55dee71ad7c0 was not matched
+[1784803609.369756] [acm-046:100746:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x5620e7083000 was not matched
+[1784803609.374635] [acm-043:1320602:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55f5ae6e20c0 was not matched
+[1784803609.370838] [acm-037:2926108:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x5558206add80 was not matched
+[1784803609.372129] [acm-061:1952087:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x558f660403c0 was not matched
+[1784803609.371109] [acm-037:2926107:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55e6da591140 was not matched
+[1784803609.372129] [acm-061:1952088:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55a4722964c0 was not matched
+[1784803609.369714] [acm-063:1592889:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x563ef233fd40 was not matched
+[1784803609.373900] [acm-025:3228595:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x561527561780 was not matched
+[1784803609.374635] [acm-043:1320601:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x561905e1eb80 was not matched
+[1784803609.374635] [acm-043:1320600:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x5632e9159100 was not matched
+[1784803609.372129] [acm-061:1952080:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55acc1039ec0 was not matched
+[1784803609.374298] [acm-025:3228596:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x563868900f00 was not matched
+[1784803609.374471] [acm-025:3228599:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x557f11c72800 was not matched
+[1784803609.374638] [acm-043:1320598:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55fe2f738580 was not matched
+[1784803609.372170] [acm-061:1952084:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x5648b70d3000 was not matched
+[1784803609.374620] [acm-025:3228594:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x562dad63bfc0 was not matched
+[1784803609.374635] [acm-043:1320599:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55676d9ca740 was not matched
+[1784803609.372129] [acm-061:1952082:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55d124e82340 was not matched
+[1784803609.372129] [acm-061:1952085:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55af4f8d4000 was not matched
+[1784803609.372390] [acm-061:1952083:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55d9da6b0800 was not matched
+[1784803609.381064] [acm-062:2911234:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x560ab8fbfb00 was not matched
+[1784803609.381099] [acm-062:2911238:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x558492ce3500 was not matched
+[1784803609.381072] [acm-062:2911241:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55fecd55d800 was not matched
+[1784803609.381069] [acm-062:2911231:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x565349644d40 was not matched
+[1784803609.381114] [acm-062:2911243:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55830a660600 was not matched
+[1784803609.381068] [acm-062:2911244:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55d8f19bb980 was not matched
+[1784803609.381068] [acm-062:2911214:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55f08a811a00 was not matched
+[1784803609.381117] [acm-062:2911245:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x560963cf10c0 was not matched
+[1784803609.381106] [acm-062:2911229:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55a19e308d80 was not matched
+[1784803609.381099] [acm-062:2911232:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x565535a40100 was not matched
+[1784803609.381139] [acm-062:2911233:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55e358700480 was not matched
+[1784803609.381134] [acm-062:2911235:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55de8a6ff140 was not matched
+[1784803609.381145] [acm-062:2911240:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x564339683280 was not matched
+[1784803609.381152] [acm-062:2911242:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x55f31477ac80 was not matched
+[1784803609.381569] [acm-062:2911236:0]       tag_match.c:62   UCX  WARN  unexpected tag-receive descriptor 0x559125034f00 was not matched

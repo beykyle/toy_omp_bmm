@@ -1,0 +1,46 @@
+# chuq_split -- CHUQ (CH89) global OMP, low-E vs high-E energy-split calibration (Ca-40 p,el).
+#
+# A *virtual* uv project (package = false): the top-level modules `chuq_io.py`, `chuq_model.py`
+# and `build_configs.py` are importable by running from the project root.  The physics model is
+# jitr.optical_potentials.chuq (imported via rxmc's jitr).
+#
+# Python is pinned to 3.11 by .python-version.  That pin is load-bearing: uv.lock forks on
+# `python_full_version < 3.12` and selects arviz 0.23.4 below it versus arviz 1.2.0 above, which
+# is a breaking API change.  Resolving on 3.12+ gives a materially different stack.
+#
+# MPI: `uv sync` installs the PyPI (MPICH) wheel of mpi4py, fine for the notebooks / smoke test /
+# serial (--no-mpi) round-trip.  For the MPI dynesty jobs, run `bash setup_mpi.sh` once to rebuild
+# mpi4py against whatever MPI this machine provides (see site.env).
+
+[project]
+name = "chuq-split"
+version = "0.1.0"
+description = "CHUQ (CH89) global OMP calibrated on low-E vs high-E terciles of Ca-40 (p, elastic); compared in a held-out middle tercile."
+requires-python = ">=3.11"
+dependencies = [
+    "rxmc",
+    "black-box-bayes",
+    "emcee>=3.1",
+    "dynesty>=2.1",
+    "mpi4py>=3",
+    "schwimmbad>=0.3",
+    "arviz>=0.16",
+    "h5netcdf>=1",
+    "h5py>=3",
+    "dill>=0.3",
+    "corner",
+    "matplotlib",
+    "pandas",
+    "jupyter",
+    "ipykernel",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+# https, not ssh: both repositories are public, and an ssh:// URL would make `uv sync` fail for
+# anyone without an SSH key registered with GitHub.  The revisions are pinned by full commit
+# SHA, so the resolved code is identical either way.
+rxmc = { git = "https://github.com/beykyle/rxmc.git", rev = "1dffe7e9d775fb321e3812470ba65bde80c7a77f" }
+black-box-bayes = { git = "https://github.com/beykyle/black-box-bayes.git", rev = "e836d28d0db7212138ca361e4cf46dd952815207" }

@@ -1,0 +1,45 @@
+#!/bin/bash --login
+# ---------------------------------------------------------------------------
+# Nested-sampling launcher for ONE calibration.  This is a TEMPLATE: it is not
+# submitted directly.  `python build_configs.py` fills the {{...}} placeholders
+# from site.env and writes the runnable script to
+# calibrations/chuq_<variant>/dynesty.slurm.
+#
+# To change resources or sampler settings, edit this file (or site.env) and
+# re-run `python build_configs.py`; do not edit the generated copies.
+# ---------------------------------------------------------------------------
+{account_line}
+#SBATCH --partition {partition}
+#SBATCH --job-name {job}
+#SBATCH --ntasks {ntasks}
+#SBATCH --cpus-per-task 1
+#SBATCH --mem-per-cpu {mem_per_cpu}
+#SBATCH --time {walltime}
+#SBATCH --output {proj}/calibrations/chuq_{name}/dynesty-%J.SLURMout
+
+{module_block}
+
+if [ ! -f "{proj}/.venv/bin/activate" ]; then
+    echo "ERROR: {proj}/.venv not found. Run 'uv sync' on a login node first." >&2
+    exit 1
+fi
+source {proj}/.venv/bin/activate
+
+# One MPI rank per core: the parallelism is across ranks, so threaded BLAS inside
+# each rank would oversubscribe the node and slow everything down.
+export OMP_NUM_THREADS=1
+export OPENBLAS_NUM_THREADS=1
+export PYTHONFAULTHANDLER=1
+cd {proj}
+
+# Auto-resume: if a checkpoint from a previous (e.g. timed-out) run exists, continue
+# from it instead of starting over.  Delete the checkpoint to force a fresh run.
+CKPT="calibrations/chuq_{name}/dynesty_checkpoint.pkl"
+RESUME=""; if [ -f "$CKPT" ]; then RESUME="--dynesty-resume"; fi
+
+{launcher} black-box-bayes \
+    --input calibrations/chuq_{name}/config.pkl --output calibrations/chuq_{name} \
+    --sampler dynesty --require-mpi \
+    --dynesty-run dynamic --nlive 1000 --dynesty-bound multi --dynesty-sample rwalk \
+    --dynesty-checkpoint-every 1800 $RESUME \
+    --idata-results calibrations/chuq_{name}/dynesty_idata.nc

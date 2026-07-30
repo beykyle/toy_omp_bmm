@@ -1,0 +1,14 @@
+* text=auto eol=lf
+
+# Binary payloads -- never diff, never munge line endings.
+*.lz   binary
+*.nc   binary
+*.npz  binary
+*.pkl  binary
+*.h5   binary
+*.png  binary
+*.pdf  binary
+
+# Notebooks are committed WITH their outputs (they are the published result),
+# so textual diffs are noise.
+*.ipynb -diff
