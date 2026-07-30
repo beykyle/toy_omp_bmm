@@ -1,4 +1,4 @@
-# toy optical model potential Bayesian model mixing
+# Optical Model Potential (OMP) Bayesian Model Mixing (BMM)
 
 ## low-E vs high-E CHUQ calibration, compared in a held-out middle tercile (Ca-40 p,el)
 
