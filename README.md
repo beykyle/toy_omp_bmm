@@ -1,4 +1,6 @@
-# chuq_split — low-E vs high-E CHUQ calibration, compared in a held-out middle tercile (Ca-40 p,el)
+# Optical Model Potential (OMP) Bayesian Model Mixing (BMM)
+
+## low-E vs high-E CHUQ calibration, compared in a held-out middle tercile (Ca-40 p,el)
 
 Two calibrations of the `jitr.optical_potentials.chuq` (CH89/CHUQ) optical potential with **different
 absorption forms**, each trained on a different energy band, then compared where neither were
