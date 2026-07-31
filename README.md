@@ -77,6 +77,7 @@ posterior mass piled into a spurious near-zero-width mode at the `Wsew ≥ 1` bo
 | `chuq_fit.ipynb` | setup: data split, priors, prior-predictive, build configs. |
 | `chuq_analysis.ipynb` | (after sampling) convergence, posteriors, depths vs E, held-out test comparison. |
 | `chuq_coverage.ipynb` | (after sampling) posterior-predictive intervals + empirical PIT coverage in all three bands. |
+| `chuq_reaction_xs.ipynb` | (after sampling) angle-integrated reaction cross section vs E over 0.01–200 MeV, both models, with each training region shaded. |
 | `data/ca40/` | the curated dataset, plus its provenance — see [`data/ca40/README.md`](data/ca40/README.md). |
 | `figures/` | every figure the notebooks produce. |
 | `run_analysis.slurm`, `run_jupyter.slurm`, `pyproject.toml`, `uv.lock`, `.python-version` | environment and job plumbing. |
@@ -120,6 +121,7 @@ python smoke_test.py              # serial sanity check
 
 ./submit.sh analysis chuq_analysis.ipynb   # execute headlessly, in place
 ./submit.sh analysis chuq_coverage.ipynb
+./submit.sh analysis chuq_reaction_xs.ipynb
 ./submit.sh jupyter                        # or view interactively
 ```
 

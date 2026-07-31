@@ -53,10 +53,12 @@ from scipy import optimize, stats
 if not hasattr(np, "trapz"):
     np.trapz = np.trapezoid
 
+import jitr
 from jitr.optical_potentials import chuq
 from rxmc.config import CalibrationConfig, ParameterConfig
 from rxmc.constraint import Constraint
 from rxmc.elastic_diffxs_model import ElasticDifferentialXSModel
+from rxmc.elastic_diffxs_observation import set_up_solver
 from rxmc.evidence import Evidence
 from rxmc.likelihood_model import UnknownModelError
 from rxmc.params import Parameter
@@ -695,6 +697,69 @@ def energy_dependent_depths(theta_omp, e_lab, variant, target=(40, 20)):
     )
     # chuq's central bundle is ordered (real, imaginary volume, imaginary surface).
     return central[0], central[1], central[2]
+
+
+# --------------------------------------------------------------------------- #
+# Angle-integrated observables at an arbitrary energy
+# --------------------------------------------------------------------------- #
+SOLVER_LMAX = 100
+SOLVER_WAVELENGTHS_BEYOND_RANGE = 2
+SOLVER_ZEROS_PER_NODE = 5
+
+
+def integral_workspace(e_lab, target=(40, 20)):
+    """A ``jitr`` integral-observable workspace for p + ``target`` at one lab energy.
+
+    Delegates to ``rxmc``'s ``set_up_solver`` -- the same helper that builds every observation's
+    workspace -- rather than re-deriving the channel radius and basis size here, so there is one
+    definition of those rather than two that can diverge.  The angle grid is a dummy single point:
+    the differential workspaces ``set_up_solver`` also returns are discarded, and only the integral
+    one is kept.
+
+    The projectile is :data:`PROTON`, matching :func:`_extract`, which hardcodes the same.  Both
+    would have to change together: a workspace built for a neutron but evaluated through
+    ``_extract`` would carry the proton's Coulomb term and give nonsense.
+
+    Args:
+        e_lab: incident lab energy in MeV.
+        target: ``(A, Z)`` of the target; Ca-40 by default.
+    """
+    reaction = jitr.reactions.ElasticReaction(target=tuple(target), projectile=PROTON)
+    dummy_angles = np.array([np.pi / 2])
+    constraint_workspace, _, _ = set_up_solver(
+        reaction,
+        e_lab,
+        dummy_angles,
+        dummy_angles,
+        lmax=SOLVER_LMAX,
+        wavelengths_beyond_range=SOLVER_WAVELENGTHS_BEYOND_RANGE,
+        zeros_per_node=SOLVER_ZEROS_PER_NODE,
+    )
+    return constraint_workspace.integral_workspace
+
+
+def reaction_cross_section(theta_omp, workspace, variant):
+    """Reaction cross section in mb for one posterior sample, at ``workspace``'s energy.
+
+    Note that below the Coulomb barrier (~5 MeV for p + Ca-40) the result underflows to zero and
+    can come back very slightly negative from roundoff; that is the sub-barrier limit, not a
+    failure, and it is the caller's job to mask it before taking a logarithm.
+
+    Args:
+        theta_omp: the free optical-model parameters of one sample (nuisance column excluded).
+        workspace: a ``jitr.xs.elastic.IntegralWorkspace``.
+        variant: ``"low"`` or ``"high"``.
+    """
+    args_central, args_spin_orbit = _extract(variant, workspace, *theta_omp)
+    # IntegralWorkspace.xs returns a bare `(sigma_tot, sigma_reaction)` tuple in mb -- unlike
+    # DifferentialWorkspace.xs, which returns an ElasticXS dataclass with named fields.  Hence
+    # the index rather than a `.rxn` attribute.
+    return workspace.xs(
+        chuq.central_plus_coulomb,
+        chuq.spin_orbit,
+        args_central=args_central,
+        args_spin_orbit=args_spin_orbit,
+    )[1]
 
 
 def builtin_prediction(obs, quantity="dXS/dRuth", visualize=False):
